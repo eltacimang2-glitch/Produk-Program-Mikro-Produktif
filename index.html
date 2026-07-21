@@ -230,7 +230,7 @@ footer{
 <body>
 
 <section class="hero">
-  <h1 class="hero-title">Produk &amp; Program Mikro Produktif Bank Mandiri</h1>
+  <h1 class="hero-title">Produk dan Program Mikro Produktif Bank Mandiri</h1>
   <p class="hero-tagline">Solusi untuk Usaha Anda</p>
   <p class="hero-info">Info lengkap: <a href="https://www.bankmandiri.co.id" target="_blank" rel="noopener">www.bankmandiri.co.id</a></p>
 
@@ -254,58 +254,260 @@ footer{
 
 <script>
 const DATA=[
-  {tag:"Kredit",name:"Kredit Usaha Mikro (KUM)",items:[
-    {name:"Kredit Usaha Mikro (KUM)",url:"https://www.bankmandiri.co.id/kredit-usaha-mikro",status:"active"},
-    {name:"Helpdesk Sahabat KUM",url:"https://bmri.id/ChatAgentKUM",status:"active"},
-    {name:"Penyesuaian Suku Bunga KUM",url:"https://bmri.id/SukuBungaKUM",status:"active"},
-    {name:"Top-up / Refill KUM",url:"https://bmri.id/topupkummandiri",status:"active"},
-    {name:"Naik Kelas KUM",url:"https://bmri.id/naikkelaskummandiri",status:"active"},
-  ]},
-  {tag:"Kredit",name:"KUM Talangan Pembelian (KUMTP)",items:[
-    {name:"KUM Talangan Pembelian",url:"https://www.bankmandiri.co.id/en/informasi-kum-talangan-pembelian-bank-mandiri",status:"active"},
-    {name:"KUM Talangan LPG 3kg Pangkalan",url:"https://www.bankmandiri.co.id/en/kum-mvc-talangan-pertamina",status:"active"},
-    {name:"KUM Talangan SAKTI",url:"https://bmri.id/kumtpsakti",status:"active"},
-    {name:"KUMTP Member Merah Indogrosir",url:"https://bmri.id/indgroskum",status:"active"},
-  ]},
-  {tag:"Kredit",name:"Kredit Usaha Rakyat (KUR)",items:[
-    {name:"Kredit Program Perumahan",url:"https://bankmandiri.co.id/kredit-program-perumahan",status:"active"},
-    {name:"Kredit Usaha Rakyat (KUR)",url:"https://bmri.id/kur",status:"active"},
-  ]},
-  {tag:"Digital",name:"Livin' Merchant",items:[
-    {name:"MELAJU Livin' Merchant",url:"https://bmri.id/LVMMelaju",status:"active"},
-    {name:"MELESAT Member Merah Indogrosir",url:"https://bmri.id/melesatbersamaLVM",status:"active"},
-    {name:"(MGM) Member Merah di Indogrosir",url:"https://bmri.id/MGM2026",status:"active"},
-  ]},
-  {tag:"Agen",name:"Mandiri Agen",items:[
-    {name:"Agen Jempolan 2026",url:"https://www.bankmandiri.co.id/en/agen-jempolan-2026",status:"active"},
-    {name:"Agen Naik Kelas",url:"https://www.bankmandiri.co.id/en/agen-naik-kelas1",status:"active"},
-    {name:"Biller Festival",url:"https://bmri.id/BillerFestivalABS",status:"active"},
-    {name:"E+ Cuan Telkomsel",url:"https://www.bankmandiri.co.id/en/paket-mandiri-agen-telkomsel",status:"active"},
-    {name:"Loyalty Poin Mandiri Agen 2026",url:"https://www.bankmandiri.co.id/en/loyalty-poin-mandiri-agen",status:"active"},
-    {name:"Mandiri Agen — Halaman Utama",url:"https://www.bankmandiri.co.id/agen-bank-mandiri",status:"active"},
-    {name:"Pembaruan PKS Mandiri Agen",url:"https://www.bankmandiri.co.id/en/pembaruan-pks-mandiri-agen",status:"active"},
-    {name:"Bebas Biaya Setor Tunai di Mandiri Agen",url:"https://www.bankmandiri.co.id/en/bebas-biaya-setor",status:"active"},
-    {name:"Aplikasi Agent Banking System (ABS)",url:"https://bankmandiri.co.id/aplikasi-agent-banking-system",status:"active"},
-    {name:"Tutorial Login Aplikasi Mandiri Agen",url:"https://bankmandiri.co.id/tutorial-login-aplikasi-mandiri-agen",status:"active"},
-    {name:"Multidevice Mandiri Agen",url:"https://www.bankmandiri.co.id/en/multidevice-mandiri-agen",status:"active"},
-    {name:"Ayo ke Mandiri Agen (FAQ)",url:"https://www.bankmandiri.co.id/en/faq-mandiriagen",status:"active"},
-    {name:"QR Mandiri Agen",url:"https://www.bankmandiri.co.id/en/12112021-qr-agen",status:"active"},
-    {name:"Welcome Gift Mandiri Agen",url:"https://www.bankmandiri.co.id/en/program-welcome-gift-mandiri-agen",status:"active"},
-    {name:"Survei Pengembangan Mandiri Agen",url:"https://bmri.id/SurveiLayananAgen",status:"active"},
-    {name:"Pendistribusian Poster Digital",url:"https://bmri.id/PosterLayananAgen",status:"active"},
-    {name:"Referral Buka Rekening di Mandiri Agen",url:"https://bankmandiri.co.id/refferal-pembukaan-rekening-mandiri-agen",status:"active"},
-  ]},
-  {tag:"Ekosistem",name:"Ekosistem & Kemitraan",items:[
-    {name:"Pasar Gembira 2026",url:"https://bmri.id/pasargembira26",status:"active"},
-    {name:"KUR & KUM Khusus Member Indogrosir",url:"https://bmri.id/kurkumindogrosir",status:"active"},
-  ]},
-  {tag:"Tabungan",name:"Tabungan",items:[
-    {name:"Tabungan (AGF Reborn)",url:"https://bmri.id/AGFReborn",status:"active"},
-  ]},
-  {tag:"UMKM",name:"UMKM & Edukasi",items:[
-    {name:"Pendaftaran Hyperlocal Hari UMKM 2026",url:"https://bmri.id/DaftarHyperlocalUMKM",status:"active"},
-    {name:"Mikro Bercerita (Podcast)",url:"https://bmri.id/PodcastMikroBercerita2026",status:"active"},
-  ]},
+  {
+    "tag": "Kredit",
+    "name": "Kredit Usaha Mikro (KUM)",
+    "items": [
+      {
+        "name": "Kredit Usaha Mikro (KUM)",
+        "url": "https://bmri.id/kum",
+        "status": "active"
+      },
+      {
+        "name": "Helpdesk Sahabat KUM",
+        "url": "https://bmri.id/ChatAgentKUM",
+        "status": "active"
+      },
+      {
+        "name": "Penyesuaian Suku Bunga KUM",
+        "url": "https://bmri.id/SukuBungaKUM",
+        "status": "active"
+      },
+      {
+        "name": "Top-up/Refill KUM",
+        "url": "https://bmri.id/topupkummandiri",
+        "status": "active"
+      },
+      {
+        "name": "Naik Kelas KUM",
+        "url": "https://bmri.id/naikkelaskummandiri",
+        "status": "active"
+      },
+      {
+        "name": "Ringanin KUM",
+        "url": "https://bmri.id/RinganinKUM",
+        "status": "active"
+      },
+      {
+        "name": "Daily Monitoring Akuisisi Agen",
+        "url": "https://bmri.id/DetailDailyMonitoringLVM",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Kredit",
+    "name": "KUM Talangan Pembelian (KUMTP)",
+    "items": [
+      {
+        "name": "KUM Talangan LPG 3kg Pangkalan",
+        "url": "https://www.bankmandiri.co.id/en/kum-mvc-talangan-pertamina",
+        "status": "active"
+      },
+      {
+        "name": "KUM Talangan SAKTI",
+        "url": "https://bmri.id/kumtpsakti",
+        "status": "active"
+      },
+      {
+        "name": "KUMTP Member Merah Indogrosir",
+        "url": "https://bmri.id/indgroskum",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Kredit",
+    "name": "Kredit Usaha Rakyat (KUR)",
+    "items": [
+      {
+        "name": "Kredit Program Perumahan",
+        "url": "https://bankmandiri.co.id/kredit-program-perumahan",
+        "status": "active"
+      },
+      {
+        "name": "Kredit Usaha Rakyat (KUR)",
+        "url": "https://bmri.id/kur",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Agen",
+    "name": "Mandiri Agen",
+    "items": [
+      {
+        "name": "Agen Jempolan 2026",
+        "url": "https://www.bankmandiri.co.id/en/agen-jempolan-2026",
+        "status": "active"
+      },
+      {
+        "name": "Agen Naik Kelas",
+        "url": "https://www.bankmandiri.co.id/en/agen-naik-kelas1",
+        "status": "active"
+      },
+      {
+        "name": "Biller Festival",
+        "url": "https://bmri.id/BillerFestivalABS",
+        "status": "active"
+      },
+      {
+        "name": "E+ Cuan Telkomsel",
+        "url": "https://www.bankmandiri.co.id/en/paket-mandiri-agen-telkomsel",
+        "status": "active"
+      },
+      {
+        "name": "Loyalty Poin Mandiri Agen 2026",
+        "url": "https://www.bankmandiri.co.id/en/loyalty-poin-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Mandiri Agen-Halaman utama",
+        "url": "https://bmri.id/mandiriagen",
+        "status": "active"
+      },
+      {
+        "name": "Pembaruan PKS Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/pembaruan-pks-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Bebas Biaya Setor Tunai di Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/bebas-biaya-setor",
+        "status": "active"
+      },
+      {
+        "name": "Aplikasi Agent Banking System (ABS)",
+        "url": "https://bankmandiri.co.id/aplikasi-agent-banking-system",
+        "status": "active"
+      },
+      {
+        "name": "Tutorial Login Aplikasi Mandiri Agen",
+        "url": "https://bankmandiri.co.id/tutorial-login-aplikasi-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Multidevice Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/multidevice-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Ayo ke Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/faq-mandiriagen",
+        "status": "active"
+      },
+      {
+        "name": "QR Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/12112021-qr-agen",
+        "status": "active"
+      },
+      {
+        "name": "Welcome Gift Mandiri Agen",
+        "url": "https://www.bankmandiri.co.id/en/program-welcome-gift-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Pengisian Survei Pengembangan Mandiri Agen",
+        "url": "https://bmri.id/SurveiLayananAgen",
+        "status": "active"
+      },
+      {
+        "name": "Pendistribusian Poster Digital",
+        "url": "https://bmri.id/PosterLayananAgen",
+        "status": "active"
+      },
+      {
+        "name": "Referral Buka Rekening di Mandiri Agen",
+        "url": "https://bankmandiri.co.id/refferal-pembukaan-rekening-mandiri-agen",
+        "status": "active"
+      },
+      {
+        "name": "Form Kunjungan Agen",
+        "url": "https://bmri.id/formkunjunganagen",
+        "status": "active"
+      },
+      {
+        "name": "PRIMAgen - Program Racing IM3 di Mandiri Agen",
+        "url": "https://bmri.id/primagen",
+        "status": "active"
+      },
+      {
+        "name": "Asuransi Mandiri Mikro Sejahtera (MMS)",
+        "url": "https://bmri.id/AsuransiMMSAgen",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Ekosistem",
+    "name": "Ekosistem",
+    "items": [
+      {
+        "name": "Pasar Gembira 2026",
+        "url": "https://bmri.id/pasargembira26",
+        "status": "active"
+      },
+      {
+        "name": "KUR, KUM Khusus Member Indogrosir",
+        "url": "https://bmri.id/kurkumindogrosir",
+        "status": "active"
+      },
+      {
+        "name": "(MGM) Member Merah di Indogrosir",
+        "url": "https://bmri.id/MGM2026",
+        "status": "active"
+      },
+      {
+        "name": "PATEN - Petani Nabung dan Tambah Modal Semakin Cuan",
+        "url": "https://bmri.id/ProgramPaten",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Tabungan",
+    "name": "Tabungan",
+    "items": [
+      {
+        "name": "Tabungan",
+        "url": "https://bmri.id/AGFReborn",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "UMKM",
+    "name": "UMKM",
+    "items": [
+      {
+        "name": "Pendaftaran Hyperlocal Hari UMKM 2026",
+        "url": "https://bmri.id/DaftarHyperlocalUMKM",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Edukasi",
+    "name": "Awareness & Edukasi",
+    "items": [
+      {
+        "name": "Mikro Bercerita",
+        "url": "https://bmri.id/PodcastMikroBercerita2026",
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "tag": "Collection",
+    "name": "Collection",
+    "items": [
+      {
+        "name": "Pencabutan Flag Restru (Unflag Restru)",
+        "url": "https://bmri.id/UnflagRestrukturisasi",
+        "status": "active"
+      }
+    ]
+  }
 ];
 
 function shortUrl(u){return u.replace(/^https?:\/\/(www\.)?/,'')}
